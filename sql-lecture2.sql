@@ -121,6 +121,25 @@
 
 
 -- ###########################################################################################################################################
--- delete ბრძანება, შეგვიძლია ცხრილების და მონაცემების წაშლა
+-- -- delete ბრძანება, შეგვიძლია ცხრილების და მონაცემების წაშლა
+-- delete from car where model ilike('cl_') returning *
 
+
+-- truncate table car --წაშლის მთლიანი ცხრილის მხოლოდ მონაცემებს, ცხრილი გასუფთავდება, 
+-- აგრეთვე ცხრილის id ათვლას დაიწყებს იმ ადილიდან რომელიც წაშლამდე იყო, ანუ id არ დარესეტდება, ჩვეულებრივ გაააგრძელებს მუშაობას.0
+
+
+
+
+
+
+
+
+-- INSERT INTO CAR (brand, model, production_year, vincode, engine, covered_distance, is_car_levied, price, is_active, fuel_type) values
+-- 	('mercedes', 'cls', 2019, 'vbce324314132414', 3.5, 12300, true, 19800, true, 'gasoline'),
+-- 	('mercedes', 'GLE', 2016, 'VH23213414341', 4.5, 4500, true, 12300, true, 'deisel'),
+-- 	('BMW', 'M5', 2018, 'VRCM214134134E', 2.8, 12000, false, 12340, false, 'gasoline'),
+-- 	('AUDI', 'R8', 2024, 'VNCM3143531323', 2.4, 12050, true, 28000, false, 'hybrid'),
+-- 	('volkswagen', 'touran', 2012, 'vbn3413413144311', 2.0, 300000, false, 5000, true, 'diesel'),
+-- 	('honda', 'fit', 2006, 'rvdc13413413414', 1.6, 200000, true, 3500, true, 'gasoline')
 
